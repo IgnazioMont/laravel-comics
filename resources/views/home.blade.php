@@ -10,5 +10,5 @@
 
 {{-- contenuto del main --}}
 @section("main_section")
-    
+    SEZIONE MAIN
 @endsection

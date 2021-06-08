@@ -39,13 +39,13 @@ header {
                     color: $white;
                     text-transform: uppercase;
                     font-weight: bolder;
-                    
+
                     li { 
                         padding: 30px 0;
                         a { margin: 0 10px;
                             i { color: $main_color; }
                         }
-                        .blue { color: $main_color; }
+                        .active { color: $main_color; }
                     }
                     :nth-child(2) { border-bottom: 2px solid $main_color; }
                 }
@@ -57,5 +57,9 @@ header {
                 border-bottom: 3px solid $main_color;
             }
         }
+    }
+
+    .jumbotron {
+        background-image: url("../img/jumbotron.jpg");
     }
 }

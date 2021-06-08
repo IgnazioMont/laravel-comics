@@ -1,4 +1,5 @@
 {{-- qui inseriamo l'header html condiviso fra le pagine --}}
+
 <header>
     <div class="row1-header">
         <div class="dc-sites">
@@ -19,7 +20,7 @@
             <div class="menu-container">
                 <ul>
                     <li><a href="#">Characters</a></li>
-                    <li><a class="blue" href="#">Comics</a></li>
+                    <li><a class="active" href="#">Comics</a></li>
                     <li><a href="#">Movies</a></li>
                     <li><a href="#">TV</a></li>
                     <li><a href="#">Games</a></li>
@@ -34,4 +35,7 @@
             <div class="search">Search <i class="fas fa-search"></i></div>
         </nav>
     </div>
+
+    {{-- Jumbotron --}}
+    <div class="jumbotron"></div>
 </header>

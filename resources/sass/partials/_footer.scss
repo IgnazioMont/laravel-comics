@@ -1,1 +1,59 @@
 /* FOOTER section */
+footer {
+    overflow: hidden;
+    
+    .row1-footer {
+        background-image: url("../img/footer-bg.jpg");
+        .container {
+            width: $main_container;
+            margin: auto;
+
+            @include display_flex_centered;
+            align-items: flex-start;
+            .col-left {
+                padding: 20px 0;
+                .columns {
+                    @include display_flex_centered;
+                    align-items: flex-start;
+                    justify-content: left;
+                    color: $white;
+
+                    li {
+                        margin-right: 15px;
+
+                        .single-col {
+                            li {
+                                line-height: 1.4;
+                                display: block;
+                                font-size: 12px;
+                                a { color: $gray; }
+    
+                                h3 {
+                                    color: $white;
+                                    margin-bottom: 15px;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                        .shop { margin-top: 20px; }
+                    }
+                }
+
+                .rights {
+                    margin-top: 10px;
+                    font-size: 12px;
+                    color: $gray;
+                    a { color: $main_color; }
+                }
+            }
+            
+            .col-right {
+                position: relative;
+                top: -70px;
+                .dc-logo {
+                    width: 465px;
+                }
+            }
+        }
+    }
+}
