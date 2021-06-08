@@ -1,9 +1,15 @@
 {{-- Parte footer HTML condivisa per le varie pagine --}}
 
 <footer>
+    
+    {{-- Row 1 --}}
     <div class="row1-footer">
         <div class="container">
+
+            {{-- Left section --}}
             <div class="col-left">
+
+                {{-- Columns --}}
                 <ul class="columns">
                     <li>
                         <ul class="single-col">
@@ -59,10 +65,30 @@
                 </div>
             </div>
 
+
+            {{-- Right section --}}
             <div class="col-right">
                 <div class="dc-logo">
                     <img src="{{ asset("img/dc-logo-bg.png")}}" alt="Logo">
                 </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- Row 2 --}}
+    <div class="row2-footer">
+        <div class="container">
+            <button>Sign-up now!</button>
+
+            <div class="social">
+                <ul>
+                    <li class="title">Follow us</li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fab fa-periscope"></i></a></li>
+                </ul>
             </div>
         </div>
     </div>

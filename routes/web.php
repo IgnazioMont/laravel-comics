@@ -14,7 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $comics = config('comics');
+    /* DEBUG
+    dd($comics);
+    */
+    
+    /* Creiamo l'array associativo */
+    $comics_array = [
+        'comics' => $comics
+    ];
+
+    return view('home', $comics_array);
 })->name("home");
 
 
