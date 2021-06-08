@@ -2,6 +2,8 @@
 
 /* Colors */
 
+/* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +15,17 @@ img {
   display: block;
 }
 
-ul {
+li {
+  display: inline-block;
   list-style-type: none;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* STYLE */
 
 /* HEADER section */
 
@@ -23,9 +33,78 @@ header .row1-header {
   background-color: #0282f9;
 }
 
-header .dc-sites {
+header .row1-header .dc-sites {
   width: 1100px;
   margin: auto;
+  text-align: right;
+  padding: 3px 0;
+}
+
+header .row1-header .dc-sites ul {
+  display: inline-block;
+}
+
+header .row1-header .dc-sites ul li {
+  color: white;
+  font-size: 12px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+header .row1-header .dc-sites ul li sup {
+  font-size: 5px;
+}
+
+header .row1-header .dc-sites ul li a {
+  color: white;
+}
+
+header .row2-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px;
+  margin: auto;
+}
+
+header .row2-header nav .logo-nav {
+  display: inline-block;
+  width: 60px;
+}
+
+header .row2-header nav .menu-container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+header .row2-header nav .menu-container ul li {
+  padding: 30px 0;
+}
+
+header .row2-header nav .menu-container ul li a {
+  margin: 0 10px;
+}
+
+header .row2-header nav .menu-container ul li a i {
+  color: #0282f9;
+}
+
+header .row2-header nav .menu-container ul li .blue {
+  color: #0282f9;
+}
+
+header .row2-header nav .menu-container ul :nth-child(2) {
+  border-bottom: 2px solid #0282f9;
+}
+
+header .row2-header nav .search {
+  text-align: right;
+  width: 100px;
+  border-bottom: 3px solid #0282f9;
 }
 
 /* MAIN section */
