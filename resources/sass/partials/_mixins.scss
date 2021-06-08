@@ -1,0 +1,11 @@
+@mixin display_flex_centered {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+@mixin clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
