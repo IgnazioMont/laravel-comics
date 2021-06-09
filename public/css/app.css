@@ -57,7 +57,11 @@ header .row1-header .dc-sites ul li sup {
   font-size: 5px;
 }
 header .row1-header .dc-sites ul li a {
+  display: flex;
   color: white;
+}
+header .row1-header .dc-sites ul li a i {
+  margin-left: 5px;
 }
 header .row2-header nav {
   display: flex;
@@ -86,6 +90,10 @@ header .row2-header nav .menu-container ul li a {
 }
 header .row2-header nav .menu-container ul li a i {
   color: #0282f9;
+  margin-left: 5px;
+}
+header .row2-header nav .menu-container ul li :last-child {
+  display: flex;
 }
 header .row2-header nav .menu-container ul li .active {
   color: #0282f9;
@@ -104,7 +112,80 @@ header .jumbotron {
 
 /* MAIN section */
 main .bg-black {
-  background-color: black;
+  background-color: #1c1c1c;
+  padding: 40px 0;
+  margin: auto;
+}
+main .bg-black .series {
+  margin-top: -67px;
+  margin-bottom: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  background-color: #0282f9;
+  border: unset;
+}
+main .bg-black .series a {
+  color: white;
+}
+main .bg-black .boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+main .bg-black .boxes .single-box {
+  width: calc(100% / 6);
+  padding: 15px;
+  margin-bottom: 20px;
+  color: white;
+}
+main .bg-black .boxes .single-box .img-box {
+  height: 165px;
+  overflow: hidden;
+}
+main .bg-black .boxes .single-box h5 {
+  margin-top: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+main .bg-black button {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 50px;
+  background-color: #0282f9;
+  border: unset;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+}
+main .contents {
+  background-color: #0282f9;
+  padding: 35px 0;
+}
+main .contents ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+}
+main .contents ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .contents ul li a .icon-img img {
+  height: 50px;
+  width: auto;
+}
+main .contents ul li a h5 {
+  color: white;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 /* FOOTER section */

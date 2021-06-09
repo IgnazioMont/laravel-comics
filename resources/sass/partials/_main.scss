@@ -1,6 +1,82 @@
 /* MAIN section */
 main {
     .bg-black {
-        background-color: $black;
+        background-color: $main_bg;
+        padding: 40px 0;
+        margin: auto;
+
+        .series  {
+            margin-top: -67px;
+            margin-bottom: 50px;
+            width: fit-content;
+            padding: 10px 25px;
+            text-transform: uppercase;
+            background-color: $main_color;
+            border: unset;
+
+            a { color: $white; }
+        }
+        
+
+        .boxes {
+            @include display_flex_centered;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            .single-box {
+                width: calc(100% / 6);
+                padding: 15px;
+                margin-bottom: 20px;
+                color: $white;
+
+                .img-box {
+                    height: 165px;
+                    overflow: hidden;
+                }
+                h5 {
+                    margin-top: 20px;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        
+        button {
+            color: $white;
+            text-transform: uppercase;
+            padding: 10px 50px;
+            background-color: $main_color;
+            border: unset;
+            cursor: pointer;
+            display: flex;
+            margin: auto;
+        }
+    }
+
+    .contents {
+        background-color: $main_color;
+        padding: 35px 0;
+        ul {
+            @include display_flex_centered;
+            justify-content: space-around;
+
+            li a {
+                @include display_flex_centered;
+
+                .icon-img {
+                    img {
+                        height: 50px;
+                        width: auto;
+                    }
+                }
+
+                h5 {
+                    color: $white;
+                    margin-left: 10px;
+                    text-transform: uppercase;
+                    font-weight: normal;
+                }
+            }
+        }
     }
 }

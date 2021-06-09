@@ -16,7 +16,13 @@ header {
                     margin-left: 20px;
                     text-transform: uppercase;
                     sup { font-size: 5px; }
-                    a { color: $white; }
+                    a {
+                        display: flex;
+                        color: $white;
+                        i {
+                            margin-left: 5px;
+                        }
+                    }
                 }
             }
         }
@@ -43,8 +49,12 @@ header {
                     li { 
                         padding: 30px 0;
                         a { margin: 0 10px;
-                            i { color: $main_color; }
+                            i {
+                                color: $main_color;
+                                margin-left: 5px;
+                            }
                         }
+                        :last-child { display: flex; }
                         .active { color: $main_color; }
                     }
                     :nth-child(2) { border-bottom: 2px solid $main_color; }
