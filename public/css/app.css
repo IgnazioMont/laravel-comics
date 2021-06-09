@@ -287,10 +287,36 @@ main.comic-detail .talent-specs .details {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: flex-start;
   padding-top: 20px;
+  padding-bottom: 80px;
+  font-size: 12px;
+}
+main.comic-detail .talent-specs .details h3 {
+  border-bottom: 1px solid #808080;
+  padding-bottom: 30px;
+  font-size: 20px;
 }
 main.comic-detail .talent-specs .details .col-left-talent, main.comic-detail .talent-specs .details .col-right-specs {
   width: 48%;
+}
+main.comic-detail .talent-specs .details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  padding: 15px 0;
+  border-bottom: 1px solid #808080;
+}
+main.comic-detail .talent-specs .details li .content {
+  width: 70%;
+}
+main.comic-detail .talent-specs .details .col-left-talent .content a {
+  color: #0282f9;
+}
+main.comic-detail .talent-specs .details .col-right-specs ul li:first-child .content {
+  text-transform: uppercase;
+  color: #0282f9;
 }
 
 /* FOOTER section */

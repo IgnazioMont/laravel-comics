@@ -179,9 +179,38 @@ main.comic-detail {
 
         .details {
             @include display_flex_centered;
+            align-items: flex-start;
             padding-top: 20px;
-            
+            padding-bottom: 80px;
+            font-size: 12px;
+
+            h3 {
+                border-bottom: 1px solid $gray;
+                padding-bottom: 30px;
+                font-size: 20px;
+            }
+
             .col-left-talent, .col-right-specs { width: 48%;}
+
+            li {
+                @include display_flex_centered;
+                align-items: flex-start;
+                padding: 15px 0;
+                border-bottom: 1px solid $gray;
+
+                .content { width: 70%; }
+            }
+
+            .col-left-talent {
+                .content a { color: $main_color; }
+            }
+
+            .col-right-specs {
+                ul li:first-child .content {
+                    text-transform: uppercase;
+                    color: $main_color;
+                }
+            }
         }
     }
 }

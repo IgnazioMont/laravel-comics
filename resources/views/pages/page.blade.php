@@ -65,11 +65,56 @@
         {{-- Specs --}}
         <div class="talent-specs">
             <div class="wrapper details">
+
                 <div class="col-left-talent">
                     <h3>Talent</h3>
+
+                    <ul>
+                        <li>
+                            <div class="head-description">Art by:</div>
+                            <p class="content">
+                                @foreach ($single_comic['artists'] as $artist)
+                                    <a href="#">{{ $artist }}</a>,
+                                @endforeach
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="head-description">Written by:</div>
+                            <p class="content">
+                                @foreach ($single_comic['writers'] as $writers)
+                                    <a href="#">{{ $writers }}</a>,
+                                @endforeach
+                            </p>
+                        </li>
+                    </ul>
                 </div>
+
                 <div class="col-right-specs">
                     <h3>Specs</h3>
+
+                    <ul>
+                        <li>
+                            <div class="head-description">Series</div>
+                            <p class="content">
+                                {{ $single_comic["series"] }}
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="head-description">U.S. Price:</div>
+                            <p class="content">
+                                {{ $single_comic["price"] }}
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="head-description">On Sale Date:</div>
+                            <p class="content">
+                                {{ $single_comic["sale_date"] }}
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
