@@ -28,3 +28,26 @@ Route::get('/', function () {
 })->name("home");
 
 
+
+/* Prendiamo anche l'id del singolo elemento */
+Route::get('/comic/{id}', function($id) {
+    $comics_array = config('comics');
+    
+    $single_comic = [];
+    foreach($comics_array as $comic) {
+        //  Se c'è, "single_comic" diventa l'array con "id" uguale a quello dell'URL
+        if($comic['id'] === (int)$id) {
+            $single_comic = $comic;
+        }
+    }
+    //  Se è vuoto, errore 404
+    if(empty($single_comic)) {
+        abort('404');
+    }
+
+    $data = [
+        'single_comic' => $single_comic
+    ];
+
+    return view('pages.page', $data);
+})->name('comic');

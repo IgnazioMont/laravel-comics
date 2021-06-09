@@ -19,7 +19,7 @@
     {{-- Con "include" si parte da "views" --}}
     @include("partials.header")
 
-    <main>
+    <main class="@yield('main_classes')">
         @yield("main_section")
     </main>
 

@@ -2,9 +2,15 @@
 @extends("layouts.app")
 
 
-{{-- head title per la homepage--}}
+{{-- "head title" per la homepage--}}
 @section("tag_title")
     Comics homepage
+@endsection
+
+
+{{-- style per la homepage (class="home" del main in scss) --}}
+@section("main_classes")
+    home
 @endsection
 
 

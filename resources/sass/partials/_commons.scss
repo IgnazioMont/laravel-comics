@@ -26,6 +26,11 @@ a {
     margin: auto;
 }
 
+.wrapper {
+    width: $wrapper;
+    margin: auto;
+}
+
 .jumbotron, .row1-footer {
     height: 320px;
     background-repeat: no-repeat;

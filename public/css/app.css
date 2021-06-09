@@ -28,6 +28,11 @@ a {
   margin: auto;
 }
 
+.wrapper {
+  width: 900px;
+  margin: auto;
+}
+
 .jumbotron, .row1-footer {
   height: 320px;
   background-repeat: no-repeat;
@@ -110,13 +115,13 @@ header .jumbotron {
   background-image: url("../img/jumbotron.jpg");
 }
 
-/* MAIN section */
-main .bg-black {
+/* MAIN homepage */
+main.home .bg-black {
   background-color: #1c1c1c;
   padding: 40px 0;
   margin: auto;
 }
-main .bg-black .series {
+main.home .bg-black .series {
   margin-top: -67px;
   margin-bottom: 50px;
   width: -webkit-fit-content;
@@ -127,32 +132,32 @@ main .bg-black .series {
   background-color: #0282f9;
   border: unset;
 }
-main .bg-black .series a {
+main.home .bg-black .series a {
   color: white;
 }
-main .bg-black .boxes {
+main.home .bg-black .boxes {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-main .bg-black .boxes .single-box {
+main.home .bg-black .boxes .single-box {
   width: calc(100% / 6);
   padding: 15px;
   margin-bottom: 20px;
   color: white;
 }
-main .bg-black .boxes .single-box .img-box {
+main.home .bg-black .boxes .single-box .img-box {
   height: 165px;
   overflow: hidden;
 }
-main .bg-black .boxes .single-box h5 {
+main.home .bg-black .boxes .single-box h5 {
   margin-top: 20px;
   font-weight: normal;
   text-transform: uppercase;
 }
-main .bg-black button {
+main.home .bg-black button {
   color: white;
   text-transform: uppercase;
   padding: 10px 50px;
@@ -162,30 +167,96 @@ main .bg-black button {
   display: flex;
   margin: auto;
 }
-main .contents {
+main.home .contents {
   background-color: #0282f9;
   padding: 35px 0;
 }
-main .contents ul {
+main.home .contents ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-content: space-around;
 }
-main .contents ul li a {
+main.home .contents ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main .contents ul li a .icon-img img {
+main.home .contents ul li a .icon-img img {
   height: 50px;
   width: auto;
 }
-main .contents ul li a h5 {
+main.home .contents ul li a h5 {
   color: white;
   margin-left: 10px;
   text-transform: uppercase;
   font-weight: normal;
+}
+
+/* MAIN single comic page */
+main.comic-detail .blue-raw {
+  background-color: #0282f9;
+  height: 100px;
+}
+main.comic-detail .blue-raw .cover {
+  position: relative;
+}
+main.comic-detail .blue-raw .cover .img-cover {
+  position: absolute;
+  top: -245px;
+  left: 0;
+  width: 200px;
+  border: 2px solid white;
+}
+main.comic-detail .blue-raw .cover .img-cover .gallery {
+  color: white;
+  text-transform: uppercase;
+  background-color: #00a9d9;
+  text-align: center;
+}
+main.comic-detail .description {
+  padding: 60px 0;
+  /* .col-right {
+      width: 29%;
+  } */
+}
+main.comic-detail .description .col-left {
+  width: 70%;
+}
+main.comic-detail .description .col-left h1 {
+  margin-bottom: 20px;
+}
+main.comic-detail .description .col-left .details {
+  background-color: #55ba59;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+}
+main.comic-detail .description .col-left .details .price {
+  width: 70%;
+}
+main.comic-detail .description .col-left .details .price ul {
+  color: #a3f795;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+main.comic-detail .description .col-left .details .price ul span {
+  color: white;
+}
+main.comic-detail .description .col-left .details .availability {
+  color: white;
+  text-align: center;
+  width: 30%;
+  border-left: 1px solid black;
+  padding: 10px;
+  padding-left: 10px;
+}
+main.comic-detail .description .col-left .details .availability i {
+  vertical-align: text-top;
 }
 
 /* FOOTER section */

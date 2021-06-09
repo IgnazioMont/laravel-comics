@@ -1,5 +1,5 @@
-/* MAIN section */
-main {
+/* MAIN homepage */
+main.home {
     .bg-black {
         background-color: $main_bg;
         padding: 40px 0;
@@ -17,7 +17,6 @@ main {
             a { color: $white; }
         }
         
-
         .boxes {
             @include display_flex_centered;
             align-items: flex-start;
@@ -78,5 +77,77 @@ main {
                 }
             }
         }
+    }
+}
+
+
+/* MAIN single comic page */
+main.comic-detail {
+
+    .blue-raw {
+        background-color: $main_color;
+        height: 100px;
+
+        .cover {
+            position: relative;
+
+            .img-cover {
+                position: absolute;
+                top: -245px;
+                left: 0;
+                width: 200px;
+                border: 2px solid $white;
+
+                .gallery {
+                    color: $white;
+                    text-transform: uppercase;
+                    background-color: $gallery;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .description {
+        padding: 60px 0;
+
+        .col-left {
+            width: 70%;
+
+            h1 { margin-bottom: 20px }
+
+            .details {
+                background-color: $deatils;
+                @include display_flex_centered;
+                justify-content: space-between;
+                
+                .price {
+                    width: 70%;
+
+                    ul {
+                        color: $price_details;
+                        @include display_flex_centered;
+                        justify-content: space-between;
+                        padding: 10px;
+                        span { color: $white; }
+                    }
+                }
+
+                .availability {
+                    color: $white;
+                    text-align: center;
+                    width: 30%;
+                    border-left: 1px solid $black;
+                    padding: 10px;
+                    padding-left: 10px;
+                    
+                    i { vertical-align: text-top; }
+                }
+            }
+        }
+        
+        /* .col-right {
+            width: 29%;
+        } */
     }
 }
