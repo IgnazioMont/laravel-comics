@@ -110,9 +110,12 @@ main.comic-detail {
 
     .description {
         padding: 60px 0;
+        @include display_flex_centered;
+        justify-content: space-between;
+        align-items: flex-start;
 
         .col-left {
-            width: 70%;
+            width: 66%;
 
             h1 { margin-bottom: 20px }
 
@@ -122,21 +125,21 @@ main.comic-detail {
                 justify-content: space-between;
                 
                 .price {
-                    width: 70%;
+                    width: 72%;
 
                     ul {
                         color: $price_details;
                         @include display_flex_centered;
                         justify-content: space-between;
-                        padding: 10px;
+                        padding: 10px 14px;
                         span { color: $white; }
                     }
                 }
 
                 .availability {
+                    width: 28%;
                     color: $white;
                     text-align: center;
-                    width: 30%;
                     border-left: 1px solid $black;
                     padding: 10px;
                     padding-left: 10px;
@@ -144,10 +147,41 @@ main.comic-detail {
                     i { vertical-align: text-top; }
                 }
             }
+
+            .description-text {
+                padding: 15px 0;
+                p {
+                    line-height: 1.6;
+                    color: $gray;
+                }
+            }
         }
         
-        /* .col-right {
-            width: 29%;
-        } */
+        .col-right {
+            width: 30%;
+
+            .adv {
+                width: 270px;
+
+                h4 {
+                    text-align: right;
+                    text-transform: uppercase;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .talent-specs {
+        background-color: $bg_light;
+        border-top: 1px solid $gray;
+        border-bottom: 1px solid $gray;
+
+        .details {
+            @include display_flex_centered;
+            padding-top: 20px;
+            
+            .col-left-talent, .col-right-specs { width: 48%;}
+        }
     }
 }

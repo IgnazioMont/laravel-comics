@@ -29,15 +29,16 @@
         {{-- Description --}}
         <div class="wrapper">
             <div class="description">
+                {{-- Left column - text --}}
                 <div class="col-left">
                     <h1>{{ $single_comic["title"] }}</h1>
 
+                    {{-- Green row --}}
                     <div class="details">
-                        
                         <div class="price">
                             <ul>
-                                <li>U.S. Price: <span>$19.99</span></li>
-                                <li>AVAILABILITY</li>
+                                <li>U.S. Price: <span>{{ $single_comic["price"] }}</span></li>
+                                <li>AVAILABLE</li>
                             </ul>
                         </div>
 
@@ -45,13 +46,30 @@
                             Check availability <i class="fas fa-sort-down"></i>
                         </div>
                     </div>
+
+                    <div class="description-text">
+                        <p>{{ $single_comic["description"] }}</p>
+                    </div>
                 </div>
 
+                 {{-- Right column - adv --}}
                 <div class="col-right">
                     <div class="adv">
-                        {{-- <div class="adv-title">Advertisement</div>
-                        <img src="{{ asset("img/show.jpg")}}" alt="Show"> --}}
+                        <h4>Advertisement</h4>
+                        <img src="{{ asset("img/show.jpg")}}" alt="Show">
                     </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- Specs --}}
+        <div class="talent-specs">
+            <div class="wrapper details">
+                <div class="col-left-talent">
+                    <h3>Talent</h3>
+                </div>
+                <div class="col-right-specs">
+                    <h3>Specs</h3>
                 </div>
             </div>
         </div>
